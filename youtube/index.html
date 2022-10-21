@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Youtube.com</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/sidebar.css" />
-    <link rel="stylesheet" href="css/video.css" />
+    <title>Youtube.com</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/video.css" />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <svg
           class="hamburger-menu"
@@ -74,7 +74,7 @@
         </svg>
       </div>
       <div class="middle-section">
-        <input class="search-bar" type="search" placeholder="Rechercher" />
+        <input class="search-bar" type="text" placeholder="Rechercher" />
         <button class="search-button">
           <svg
             class="search-icon"
@@ -88,8 +88,9 @@
               ></path>
             </g>
           </svg>
+          <span class="tooltip">Rechercher</span>
         </button>
-        <button class="voice-search-button">
+        <button class="voice-button">
           <svg
             class="voice-search-icon"
             viewBox="0 0 24 24"
@@ -102,6 +103,7 @@
               ></path>
             </g>
           </svg>
+          <span class="tooltip">Effectuer une recherche vocale</span>
         </button>
       </div>
       <div class="right-section">
@@ -132,14 +134,16 @@
           </svg>
           <span class="notification-number">9+</span>
         </div>
+
         <img
           class="profile-icon"
-          src="images/icons/profile.jpg"
-          alt="profile"
+          src="images/profile.jpg"
+          alt="Profil youtube"
         />
       </div>
-    </div>
-    <div class="sidebar">
+    </header>
+
+    <nav class="sidebar">
       <div class="sidebar-link">
         <svg
           class="sidebar-icon"
@@ -225,18 +229,24 @@
         </svg>
         <span>Bibliothèque</span>
       </div>
-    </div>
-    <div class="video-grid">
-      <div class="video-preview">
+    </nav>
+
+    <main class="video-grid">
+      <section class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/image-1.webp" />
-          <div class="video-time">45:08</div>
+          <img
+            class="thumbnail"
+            src="images/image-1.webp"
+            alt="Haïti, plus fort la vie "
+          />
+          <span class="video-time">45:08</span>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
             <img
               class="profile-picture"
               src="images/les-routes-de-limpossible-profile.jpg"
+              alt="les routes de l'impossible"
             />
           </div>
           <div class="video-info">
@@ -247,16 +257,18 @@
             <p class="video-stats">4,6 M de vues &#183; il y a 1 an</p>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
+      </section>
+      <section class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/image-2.webp" />
+          <img class="thumbnail" src="images/image-2.webp" alt="Celibataire" />
+          <span class="video-time">3:05</span>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
             <img
               class="profile-picture"
               src="images/le-parlement-du-rire.jpg"
+              alt="Le parlement du rire"
             />
           </div>
           <div class="video-info">
@@ -267,14 +279,23 @@
             <p class="video-stats">121 k vues &#183; il y a 6 jours</p>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
+      </section>
+      <section class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/image-3.webp" />
+          <img
+            class="thumbnail"
+            src="images/image-3.webp"
+            alt="Basculementr en europe "
+          />
+          <span class="video-time">1:30:04</span>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="images/hugoDecrypte.jpg" />
+            <img
+              class="profile-picture"
+              src="images/hugoDecrypte.jpg"
+              alt="hugo decrypte"
+            />
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -285,14 +306,23 @@
             <p class="video-stats">101 k vues &#183; il y a 11 heures</p>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
+      </section>
+      <section class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/image-4.webp" />
+          <img
+            class="thumbnail"
+            src="images/image-4.webp"
+            alt="Japan x France 5-0- All Goals & Extended Highlights "
+          />
+          <span class="video-time">32:05</span>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="images/star education.jpg" />
+            <img
+              class="profile-picture"
+              src="images/star education.jpg"
+              alt="Japan x France 5-0- All Goals & Extended Highlights "
+            />
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -302,14 +332,23 @@
             <p class="video-stats">263 k vues &#183; il y a 21 heures</p>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
+      </section>
+      <section class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/image-5.webp" />
+          <img
+            class="thumbnail"
+            src="images/image-5.webp"
+            alt="Pays le plus Pauvre du Monde"
+          />
+          <span class="video-time">5:52</span>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="images/ruhi.jpg" />
+            <img
+              class="profile-picture"
+              src="images/ruhi.jpg"
+              alt="Pays le plus Pauvre du Monde"
+            />
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -320,14 +359,23 @@
             <p class="video-stats">1,2 M de vues &#183; il y a 5 mois</p>
           </div>
         </div>
-      </div>
-      <div class="video-preview">
+      </section>
+      <section class="video-preview">
         <div class="thumbnail-row">
-          <img class="thumbnail" src="images/image-6.webp" />
+          <img
+            class="thumbnail"
+            src="images/image-6.webp"
+            alt="Pogba a-t-il Vraiment Marabouté"
+          />
+          <span class="video-time">3:54:21</span>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
-            <img class="profile-picture" src="images/h5 motivation.jpg" />
+            <img
+              class="profile-picture"
+              src="images/h5 motivation.jpg"
+              alt="Pogba a-t-il Vraiment Marabouté"
+            />
           </div>
           <div class="video-info">
             <p class="video-title">
@@ -338,7 +386,7 @@
             <p class="video-stats">57 k vues &#183; il y a 1 jour</p>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
